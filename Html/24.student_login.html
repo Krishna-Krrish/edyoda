@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        .form-container{
+            margin:50px auto;
+            padding:20px;
+            max-width:500px;
+            background-color:mediumaquamarine;
+            border:2px solid black;
+            border-radius: 5px;
+        }
+        .form-container:hover{
+            background-color:yellow;
+        }
+        input{
+            width:100%;
+            padding:12px;
+            border: 1px solid #ccc;
+            margin-top: 6px;
+            margin-bottom: 16px;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        label{
+            font-size: 20px;
+        }
+        #submit{
+            background-color: mediumblue;
+            color: white;
+            padding:12px 20px;
+            cursor: pointer;
+        }
+        #submit:hover{
+            background-color:red;
+        }
+    </style>
+</head>
+<body>
+    
+    <main>
+        <div class="form-container">
+            <h1 style="text-align:center;font-size:30px;">Student Signup Form</h1>
+            <form action="">
+
+                <label for="firstname">firstname:</label>
+                <input type="text" name="" id="firstname" placeholder="firstname">
+
+                <label for="lastname">LastName:</label>
+                <input type="text" name="" id="LastName" placeholder="lastname">
+
+                <label for="email">Email:</label>
+                <input type="email" name="" id="email" placeholder="email">
+
+                <label for="password">password:</label>
+                <input type="password" name="" id="password" placeholder="password">
+
+                <label for="ConfirmPassword">Confirm Password:</label>
+                <input type="password" name="" id="ConfirmPassword" placeholder="ConfirmPassword">
+
+                <input id="submit" type="submit" value="signup">
+            </form>
+        </div>
+    </main>
+</body>
+</html>

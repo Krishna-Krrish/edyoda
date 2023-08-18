@@ -1,0 +1,196 @@
+*{
+    margin: 0;
+    padding:0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    background-color: #eff7ff;
+}
+header{
+    Padding: 0px 78px;
+    Background-color: #fff;
+    border-bottom: solid rgb(189, 187, 187) 1px;
+    display: flex;
+    
+}
+nav{
+    display: flex;
+}
+.logo{
+    margin: 20px;
+    Width: 130px;
+    size: 32px;
+    color: #0084ff;
+    cursor: pointer;
+    
+}
+.stories{
+    margin:0;
+    padding:0;
+    font-weight: normal;
+    font-style: Raleway;
+    font-style: Italic;
+    cursor: pointer;
+    color: rgb(145, 143, 143);
+    font-size: 20px;
+
+    
+}
+.dropdown{
+    color: #000;
+    padding-top:30px;
+    padding-left: 50px;
+    cursor: pointer;
+    font-size:18px;
+
+    
+ }
+.dropdown img{
+    padding-top:0;
+    padding-left:8px;
+    cursor: pointer;
+ }  
+.about{
+    padding-top:15px; 
+    padding-left: 350px;
+    font-size: 18px;
+    color: rgb(194, 190, 190);
+    
+
+    
+} 
+button{
+height: 50px;    
+margin:20px;
+margin-left:80px ;
+padding:0px 30px;
+border-radius:100px;
+border: none;
+justify-content: center;
+font-size: 13px;
+cursor: pointer;
+background-color: #0084ff;
+color: #fff;
+
+} 
+
+.heading{
+    font-size:40px;
+    margin:10px 200px
+}
+.filter{
+   display: flex;
+}
+.filterimg{
+    margin-left: 200px;
+    margin-top: 3px;
+    height: 20px;
+    width:  20px;
+    display: flex;
+}
+.text{
+    margin-left: 10px;
+    font-size:18px;
+}
+.categories{
+    margin-left: 200px;
+    margin-top: 5px;
+    font-size: 10px;
+    padding-top: 0px;
+    padding-right:100px;
+    display: flex;
+}
+#All{
+  Padding: 6px 30px;
+  height: auto;
+  Width:auto;
+  background-color: unset;
+  color: #017efa;
+  border-radius:15px;
+  Border: 1px solid #0084ff;
+  Margin: 5px;
+  Cursor: pointer;
+  flex-wrap: wrap;
+}
+#All:hover{
+    color: #f7fafd;
+    background-color: #0a82fa;
+}
+.container{
+    margin-left:190px;
+    margin-top: 4px;
+    width: 80%;
+    height: 900px;
+    display: flex;
+    flex-wrap: wrap;
+    cursor: pointer;
+}
+.card{
+    Height: 360px;
+    Width: 280px;
+    background-color: white;
+    margin:20px;
+    border: solid rgb(198, 207, 245) 1px;
+    border-radius: 5px;
+    margin-bottom: 0px;
+}
+.card img{
+     Height: 176px;
+     Width: 280px;
+     border-radius: 5px;
+}
+.title{
+    font-size: 18px;
+    text-align:left;
+    Margin: 0;
+    font-weight: 600;
+}
+.card #date{
+    color: rgba(0,0,0,0.7);
+    font-size: 14px;
+    font-weight:500px;
+    
+}
+.card #edyoda{
+    color: #0084ff;
+}
+.card #text{
+    Padding: 10px 24px;
+}
+.card #details{
+    font-Size: 14px;
+    font-weight: 400;
+    Line-height: 1.43;
+    color: rgba(0,0,0,.6);
+    Margin: 4px 0;
+}
+.footer{
+    Background-color: #172146;
+    margin-top:270px;
+    padding:30px 0;
+    display: flex;
+    position: sticky;
+}
+
+.footer p{
+    color: #f6f6f8;
+    padding: 30px 20px;
+    font-size:12px;
+    cursor: pointer;
+
+}
+.footer h1{
+    color: #f6f6f8;
+    font-size:20px;
+    padding-left: 210px;
+    margin-top: 0;
+    padding-top: 0;
+}
+.footer p img{
+    height: 15px;
+    padding-top: 30px;
+    cursor: pointer;
+}
+
+
+

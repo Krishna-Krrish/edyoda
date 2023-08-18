@@ -1,0 +1,170 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom:0;
+    padding-bottom: 0;
+}
+.navbar img{
+     height: 45px;
+     margin: 30px;
+     display: flex;
+}
+.menu{
+     padding: 30px;
+     font-size: 18px;
+     color:#FE5D20;
+     text-decoration: none;
+}
+.menu:hover{
+    color: #8071D0;
+    text-decoration: underline solid black 1.5px;
+}
+.menubar{
+    margin-top:20px;
+    margin-left:120px;
+    display: flex;
+}
+.navbar button{
+   margin: 30px;
+   height: 50px;
+   width: 150px;
+   padding:25px;
+   padding-top:18px;
+   padding-left:35px;
+   border-radius:20px;
+   border: none;
+   display: flex;
+   cursor: pointer;
+   background-color: #FFD8DB;
+   color: #A389CC;
+}
+.section{
+    margin: 40px auto auto 150px;
+    font-family: sans-serif;
+    font-size: 50px;
+    font-weight: bolder;
+    display: inline-block;
+}
+.boy{
+    display: inline-block;
+    width: 650px;
+    height: 650px;
+    margin-top: 30px;
+    position: absolute;
+    right: 40px;
+}
+.section h1{
+    margin-bottom: 0%;
+}
+.section p{
+    color: gray;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: small;
+    font-weight: bold;
+    position: relative;
+    text-align: justify;
+}
+.control{
+    align-items: center;
+    display: flex;
+}
+.card{
+    width: 400px;
+    height: 400px;
+    margin: 40px auto auto 150px;
+    padding: 0%;
+}
+.tick{
+    background-color: rgb(248, 248, 248);
+    border-radius: 15px;
+    align-items: center;
+    display: flex;
+    padding: 5px;
+    margin: 7px;
+    width: 300px;
+    position: relative
+}
+
+.tick p{
+    display: inline-block;
+    margin: 5px;
+    font-family: sans-serif;
+    font-size: small;
+    font-weight: bold;
+    color: black
+}
+.user{
+    display: inline-flex;
+    position: absolute;
+    align-items: center;
+    right: 120px;
+    width: 30px;
+    height: 30px
+}
+p.date {
+    color: gray;
+}
+.icon{
+    align-items: center;
+    position: absolute;
+    right: 10px;
+    width: 20px;
+    height: 10px;
+    border-radius: 8px
+}
+#pink{
+    background-color: #FED7DA
+}
+.date{
+    position: absolute;
+    right: 50px;
+}
+.section button{
+    font-size: small;
+    background-color: #5243C0;
+    padding: 15px 30px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    margin: 0px;
+    
+}
+.arrow{
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    margin-top: 30px;
+
+}
+#red{
+    background-color:#FD6534
+}
+#green{
+    background-color: #9ED095;
+}
+#yellow{
+    background-color: #FFE4A0;
+}
+.hov img:last-child {
+    display: none;
+}
+.gray{
+    display: inline-block;
+}
+.tick:hover{
+    background-color: #5243C0;
+}
+.card:hover{
+    border-bottom-color: #5243C0;
+}
+.hov:hover{
+    background-color: #5243C0;
+}
+
+

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            height: 500px;
+            width: 700px;
+            background-color: aqua;
+            overflow: auto;
+            padding: 20px 10%;
+        }
+        .red{
+            height: 100px;
+            width: 100px;
+            background-color: red;
+            border-radius: 100%;
+            position: absolute;
+            top: 100px;
+            z-index: 2000;
+        }
+        .yellow{
+            height: 100px;
+            width: 100px;
+            background-color: yellow;
+            border-radius: 100%;
+            position: absolute;
+            top: 100px;
+            left: 20px;
+            z-index: 400;
+        }
+        .green{
+            height: 100px;
+            width: 100px;
+            background-color: green;
+            border-radius: 100%;
+            position: absolute;
+            top: 200px;
+            left: 10px;
+            top: 150px;
+            z-index: 300;
+        }
+        .container{
+            border: 1px solid black;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo eum velit expedita sequi quae sed molestiae recusandae ipsum natus harum?</p>
+
+        <div class="red"></div>
+        <div class="yellow"></div>
+        <div class="green"></div>
+    </div>
+</body>
+</html>

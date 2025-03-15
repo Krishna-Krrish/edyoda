@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        div{
+            height: 300px;
+            width: 400px;
+            overflow: scroll;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    
+    <div id="d1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae reiciendis architecto tenetur eaque quos iusto ipsa illo sit natus perferendis! Asperiores quibusdam vel accusantium odio, cum iste ullam dolore consequuntur. Sint doloribus praesentium, aut accusamus dolore in ea perferendis adipisci nobis architecto fuga atque officiis pariatur? At, hic voluptate nam obcaecati, facere quasi qui placeat architecto nostrum nihil eligendi corrupti velit cum, sit ducimus adipisci dolore odio ipsa quibusdam non magni. Neque, harum omnis? Dignissimos corporis consequuntur tempora quos nulla reiciendis, quo officia error neque? Delectus eos, quod, ab, nesciunt eum dolorem deserunt reiciendis culpa quas ea maxime impedit ducimus.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae reiciendis architecto tenetur eaque quos iusto ipsa illo sit natus perferendis! Asperiores quibusdam vel accusantium odio, cum iste ullam dolore consequuntur. Sint doloribus praesentium, aut accusamus dolore in ea perferendis adipisci nobis architecto fuga atque officiis pariatur? At, hic voluptate nam obcaecati, facere quasi qui placeat architecto nostrum nihil eligendi corrupti velit cum, sit ducimus adipisci dolore odio ipsa quibusdam non magni. Neque, harum omnis? Dignissimos corporis consequuntur tempora quos nulla reiciendis, quo officia error neque? Delectus eos, quod, ab, nesciunt eum dolorem deserunt reiciendis culpa quas ea maxime impedit ducimus.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae reiciendis architecto tenetur eaque quos iusto ipsa illo sit natus perferendis! Asperiores quibusdam vel accusantium odio, cum iste ullam dolore consequuntur. Sint doloribus praesentium, aut accusamus dolore in ea perferendis adipisci nobis architecto fuga atque officiis pariatur? At, hic voluptate nam obcaecati, facere quasi qui placeat architecto nostrum nihil eligendi corrupti velit cum, sit ducimus adipisci dolore odio ipsa quibusdam non magni. Neque, harum omnis? Dignissimos corporis consequuntur tempora quos nulla reiciendis, quo officia error neque? Delectus eos, quod, ab, nesciunt eum dolorem deserunt reiciendis culpa quas ea maxime impedit ducimus.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae reiciendis architecto tenetur eaque quos iusto ipsa illo sit natus perferendis! Asperiores quibusdam vel accusantium odio, cum iste ullam dolore consequuntur. Sint doloribus praesentium, aut accusamus dolore in ea perferendis adipisci nobis architecto fuga atque officiis pariatur? At, hic voluptate nam obcaecati, facere quasi qui placeat architecto nostrum nihil eligendi corrupti velit cum, sit ducimus adipisci dolore odio ipsa quibusdam non magni. Neque, harum omnis? Dignissimos corporis consequuntur tempora quos nulla reiciendis, quo officia error neque? Delectus eos, quod, ab, nesciunt eum dolorem deserunt reiciendis culpa quas ea maxime impedit ducimus.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae reiciendis architecto tenetur eaque quos iusto ipsa illo sit natus perferendis! Asperiores quibusdam vel accusantium odio, cum iste ullam dolore consequuntur. Sint doloribus praesentium, aut accusamus dolore in ea perferendis adipisci nobis architecto fuga atque officiis pariatur? At, hic voluptate nam obcaecati, facere quasi qui placeat architecto nostrum nihil eligendi corrupti velit cum, sit ducimus adipisci dolore odio ipsa quibusdam non magni. Neque, harum omnis? Dignissimos corporis consequuntur tempora quos nulla reiciendis, quo officia error neque? Delectus eos, quod, ab, nesciunt eum dolorem deserunt reiciendis culpa quas ea maxime impedit ducimus.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae reiciendis architecto tenetur eaque quos iusto ipsa illo sit natus perferendis! Asperiores quibusdam vel accusantium odio, cum iste ullam dolore consequuntur. Sint doloribus praesentium, aut accusamus dolore in ea perferendis adipisci nobis architecto fuga atque officiis pariatur? At, hic voluptate nam obcaecati, facere quasi qui placeat architecto nostrum nihil eligendi corrupti velit cum, sit ducimus adipisci dolore odio ipsa quibusdam non magni. Neque, harum omnis? Dignissimos corporis consequuntur tempora quos nulla reiciendis, quo officia error neque? Delectus eos, quod, ab, nesciunt eum dolorem deserunt reiciendis culpa quas ea maxime impedit ducimus.
+
+    </div>
+
+    <script>
+        let div=document.getElementById("d1")
+
+        div.addEventListener("scroll",function(){
+
+            console.log("i am scrolling......",div.scrollTop)
+
+            if(div.scrollTop>362 && div.scrollTop<370){
+                let h1=document.createElement("h1")
+                console.log("sfdsf")
+
+                h1.innerText="you are in middle";
+                document.body.appendChild(h1)
+            }
+
+        })
+
+    </script>
+</body>
+</html>

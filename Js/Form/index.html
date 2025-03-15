@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <style>
+        body{
+            /* background-color: aliceblue; */
+            background-image: url(./website-background-rotate.gif);
+        }
+         h1{
+            text-align: center;
+            color:white;
+            font-weight: bold;
+            text-shadow: 1px 1px 2px burlywood;
+         }
+         #myForm{
+            margin: 20px auto;
+            width: 30%;
+            padding: 20px;
+            background-color: mediumspringgreen;
+            /* border: 2px solid black; */
+            border-radius: 5px;
+            box-shadow: 1px 1px 10px rgb(244, 248, 244);
+         }
+         label{
+            font-size:20px;
+            font-weight:600;
+         }
+        input{
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            margin-top:5px;
+            margin-bottom:10px;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size:15px;
+        }
+        input:focus{
+            outline: none;
+        }
+        .error {
+            color: red;
+        }
+        #submit{
+            border-radius: 20px;
+            font-size: 18px;
+            background-color:blueviolet;
+            cursor: pointer;
+            border:1px solid blueviolet;
+            transition: 0.3s;
+            font-weight: bold;
+            color: white;
+        }
+        #submit:hover{
+            background-color: transparent;
+            /* font-size:19px; */
+            box-shadow:0 0 10px black;
+            color: black;
+        }
+        input::placeholder{
+            color: rgba(128, 128, 128, 0.479);
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Please Sign In</h1>
+    <form id="myForm" onsubmit="return validateForm()">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter the Name"> <br>
+        <span class="error" id="nameError"></span><br><br>
+
+        <label for="email">Email</label>
+        <input type="text" id="email" name="email" placeholder="Enter the Email"> <br>
+        <span class="error" id="emailError"></span><br><br>
+
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="Enter the Password"> <br>
+        <span class="error" id="passwordError"></span><br><br>
+
+        <input type="submit" value="Sign In" id="submit">
+    </form>
+
+    <script>
+        function validateForm() {
+            const name = document.getElementById("name").value;
+            const email = document.getElementById("email").value;
+            const password = document.getElementById("password").value;
+
+            const nameError = document.getElementById("nameError");
+            const emailError = document.getElementById("emailError");
+            const passwordError = document.getElementById("passwordError");
+
+            nameError.innerHTML = "";
+            emailError.innerHTML = "";
+            passwordError.innerHTML = "";
+
+            let isValid = true;
+
+            if (name === "") {
+                nameError.innerHTML = "Name is required.";
+                isValid = false;
+            }
+
+            const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+            if (!email.match(emailPattern)) {
+                emailError.innerHTML = "Email is not valid.";
+                isValid = false;
+            }
+
+            if (password === "") {
+                passwordError.innerHTML = "Password is required.";
+                isValid = false;
+            } else if (password.length < 8) {
+                passwordError.innerHTML = "Password must be at least 8 characters.";
+                isValid = false;
+            }
+
+            return isValid;
+        }
+    </script>
+</body>
+</html>
